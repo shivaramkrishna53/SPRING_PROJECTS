@@ -1,0 +1,8 @@
+package com.calculateintrest.dao;
+
+import com.calculateintrest.dto.CustomerDto;
+
+public interface CustomerDao {
+	
+
+}

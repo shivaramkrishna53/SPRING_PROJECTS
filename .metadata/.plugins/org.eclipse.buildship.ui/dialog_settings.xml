@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.buildship.ui.wizard.project.import">
+		<item key="project_location" value="D:\Shiva spring projects\iocproj-13-realtimedi-calculateinterset"/>
+	</section>
+	<section name="org.eclipse.buildship.ui.wizard.project.creation">
+		<item key="project_location" value="D:\shivajavafullstack\Shiva spring projects\iocproj-29-FactorymethodBeanInstansisation"/>
+		<item key="use_default_location" value="true"/>
+		<item key="auto_sync" value="true"/>
+		<item key="gradle_distribution" value="GRADLE_DISTRIBUTION(LOCAL_INSTALLATION(D:\shivajavafullstack\javatools\gradle-6.5.1-bin\gradle-6.5.1))"/>
+		<item key="java_home" value="C:\Program Files\Java\jdk-14.0.1"/>
+		<item key="gradle_user_home" value="D:\shivajavafullstack\javatools\gradle-6.5.1-bin\gradle-6.5.1"/>
+	</section>
+</section>

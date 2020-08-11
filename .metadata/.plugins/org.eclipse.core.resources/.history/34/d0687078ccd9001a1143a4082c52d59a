@@ -1,0 +1,5 @@
+package java.com.nt.service;
+
+public interface CricketerAvgService {
+
+}

@@ -1,0 +1,5 @@
+package com.calculateintrest.dao;
+
+public interface CustomerDao {
+
+}

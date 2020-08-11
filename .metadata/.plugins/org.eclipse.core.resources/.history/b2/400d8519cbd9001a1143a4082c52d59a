@@ -1,0 +1,11 @@
+package java.com.nt.controller;
+import java.com.nt.service.*;
+public class CricketerAvgController {
+private CricketerAvgService service;
+
+public CricketerAvgController(CricketerAvgServiceImpl service) {
+	
+	this.service = service;
+}
+
+}

@@ -1,0 +1,5 @@
+package com.calculateintrest.service;
+
+public interface CustomerService {
+
+}

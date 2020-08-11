@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+        <!-- static factory method returning own class reference -->
+        <bean id="c1" class="java.lang.Class" factory-method="forName">
+        <constructor-arg value="java.util.Date"/>
+        </bean>
+        <!-- static factory method returning the reference of subclass -->
+        <bead id="cal" class="java.util.Calender" factory-method="getInstance">
+        </bead>
+        
+        </beans>

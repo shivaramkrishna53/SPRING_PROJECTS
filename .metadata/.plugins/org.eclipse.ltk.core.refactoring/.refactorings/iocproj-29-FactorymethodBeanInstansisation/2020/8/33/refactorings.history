@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;iocproj-29-FactorymethodBeanInstansisation&apos;&#x0D;&#x0A;- Original project: &apos;iocproj-29-FactorymethodBeanInstansisation&apos;&#x0D;&#x0A;- Original element: &apos;iocproj-29-FactorymethodBeanInstansisation/src/main/java/iocproj.FactorymethodBeanInstansisation&apos;" description="Delete element" element1="/src\/main\/java=/gradle_scope=/main=/=/gradle_used_by_scope=/main,test=/&lt;iocproj.FactorymethodBeanInstansisation" element2="/src\/main\/java=/gradle_scope=/main=/=/gradle_used_by_scope=/main,test=/&lt;iocproj" elements="2" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1597091031810" subPackages="false" version="1.0"/>
+</session>

@@ -1,0 +1,7 @@
+package com.calculateintrest.service;
+import com.calculateintrest.dao.*;
+public class CustomerServiceImpl {
+private CustomerDaoImpl dao=null;
+
+
+}

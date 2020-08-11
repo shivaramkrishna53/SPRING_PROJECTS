@@ -1,0 +1,21 @@
+package com.nt.beans;
+
+public class TestBean {
+
+	int a,b,c;
+	public TestBean(int c)
+	{
+		System.out.println("1- param private constructor");
+		this.c=c;
+	}
+	
+	private static class privcla
+	{
+		public privcla()
+		{
+			System.out.println("private class constructor is called");
+		}
+		
+		
+	}
+}

@@ -1,0 +1,5 @@
+package com.calculateintrest.bo;
+
+public class CustomerBo {
+
+}

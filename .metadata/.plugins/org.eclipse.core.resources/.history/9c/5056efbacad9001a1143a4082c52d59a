@@ -1,0 +1,6 @@
+package java.com.nt.controller;
+
+public class CricketerAvgController {
+private CricketerAvgService service;
+
+}

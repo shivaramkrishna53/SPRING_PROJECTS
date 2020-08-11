@@ -1,0 +1,27 @@
+package com.calculateintrest.test;
+import java.util.Scanner;
+public class RealTimeTestDi {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=null;
+		int cno=0,ctime=0;
+		String cname=null,cadd=null;
+		float cprinamnt=0.0f;
+		sc=new Scanner(System.in);
+		System.out.println("Enter the customer uniqueno:");
+		cno=sc.nextInt();
+		System.out.println("Enter the customer name");
+		cname=sc.next();
+		System.out.println("Enter the customer address");
+		cadd=sc.next();
+		System.out.println("Enter the principal amount");
+		cprinamnt=sc.nextFloat();
+		System.out.println("Enter the rate of intrest");
+		ctime=sc.nextInt();
+		
+		
+
+	}
+
+}

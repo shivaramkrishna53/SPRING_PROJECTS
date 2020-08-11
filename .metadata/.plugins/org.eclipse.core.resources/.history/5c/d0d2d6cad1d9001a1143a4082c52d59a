@@ -1,0 +1,33 @@
+package java.com.nt.dao;
+
+import java.com.nt.bo.CricketerAvgBo;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+import org.springframework.jdbc.datasource.DriverManagerDataSource;
+
+public class CricketerAvgDaoImpl implements CricketerAvgDao{
+
+	public String query="insert into cricketavg values(?,?,?,?,?,?,?)";
+	private DriverManagerDataSource dmds;
+	
+	public CricketerAvgDaoImpl(DriverManagerDataSource dmds) {
+		
+		this.dmds = dmds;
+	}
+
+	public int insert(CricketerAvgBo bo) throws Exception
+	{
+		Connection con=dmds.getConnection();
+		PreparedStatement ps=con.prepareStatement(query);
+		ps.setString(1,bo.getName());
+		ps.setInt(2,bo.getRunsscored());
+		ps.setInt(3,bo.getGotout());
+		ps.setInt(4,bo.getRunsgiven());
+		ps.setInt(5,bo.getWicketstaken());
+		int bat=int(bo.getBattingavg());
+		int
+		ps.setInt(6, );
+		ps.setInt(7,Integer.parseInt(bo.getBowlingavg()));
+	}
+}

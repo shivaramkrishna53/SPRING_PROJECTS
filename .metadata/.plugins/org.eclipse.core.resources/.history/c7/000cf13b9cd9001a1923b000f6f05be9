@@ -1,0 +1,17 @@
+package com.calculateintrest.controller;
+
+import com.calculateintrest.service.CustomerServiceImpl;
+import com.calculateintrest.vo.CustomerVo;
+
+public class CustomerController {
+	private CustomerServiceImpl ser;
+
+	public CustomerController(CustomerServiceImpl ser) {
+		this.ser = ser;
+	}
+	public String processreq(CustomerVo)
+	{
+		
+	}
+
+}

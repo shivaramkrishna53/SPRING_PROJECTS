@@ -1,0 +1,45 @@
+package com.calculateintrest.dto;
+
+public class CustomerDto {
+	private String cname=null,cadd=null;
+	private int cno=0,ctime=0,crate=0;
+	private float cprinamnt=0.0f;
+	public String getCname() {
+		return cname;
+	}
+	public void setCname(String cname) {
+		this.cname = cname;
+	}
+	public String getCadd() {
+		return cadd;
+	}
+	public void setCadd(String cadd) {
+		this.cadd = cadd;
+	}
+	public int getCno() {
+		return cno;
+	}
+	public void setCno(int cno) {
+		this.cno = cno;
+	}
+	public int getCtime() {
+		return ctime;
+	}
+	public void setCtime(int ctime) {
+		this.ctime = ctime;
+	}
+	public int getCrate() {
+		return crate;
+	}
+	public void setCrate(int crate) {
+		this.crate = crate;
+	}
+	public float getCprinamnt() {
+		return cprinamnt;
+	}
+	public void setCprinamnt(float cprinamnt) {
+		this.cprinamnt = cprinamnt;
+	}
+	
+
+}
