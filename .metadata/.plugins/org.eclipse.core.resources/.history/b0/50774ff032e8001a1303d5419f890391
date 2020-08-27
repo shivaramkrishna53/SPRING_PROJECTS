@@ -1,0 +1,17 @@
+package com.nt.test;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class NestedContainersTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		ClassPathXmlApplicationContext parentctx=ClassPathXmlApplicationContext("com/nt/cfgs/ParentApplicationContext.xml");
+		ClassPathXmlApplicationContext ctx=new ClassPathXmlApplicationContext("com/calculateintrest/cfgs/applicationContext.xml");
+
+
+	}
+
+}

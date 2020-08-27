@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+  https://www.springframework.org/schema/beans/spring-beans.xsd">
+  
+  <!-- configure Datasource -->
+	<bean id="oradrds" class="org.springframework.jdbc.datasource.DriverManagerDataSource" >
+	<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"/>
+	<property name="url" value="jdbc:oracle:thin:@localhost:1521:orcl"/>
+	<property name="username" value="c##shiva1234"/>
+	<property name="password" value="shiva1234"/>
+	</bean>
+	
+	<!-- configure dao -->
+	<bean id="dao" class="com.calculateintrest.dao.CustomerDaoImpl">
+	<constructor-arg ref="oradrds"/>
+	</bean>
+	<!-- configure service -->
+	<bean id="service" class="com.calculateintrest.service.CustomerServiceImpl">
+	<constructor-arg ref="dao"/>
+	</bean>
+	<!-- configure controller -->
+	<bean id="controller" class="com.calculateintrest.controller.CustomerController">
+	<constructor-arg ref="service"></constructor-arg>
+	</bean>
+  
+</beans>

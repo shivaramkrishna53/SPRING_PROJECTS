@@ -1,0 +1,15 @@
+package com.nt.dao;
+
+import java.util.List;
+
+import com.nt.bo.EmpBo;
+
+public class EmpDaoImp implements EmpDao {
+
+	@Override
+	public List<EmpBo> getEmpDetails(String desg1, String desg2, String desg3) throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

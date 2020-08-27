@@ -1,0 +1,18 @@
+package com.nt.beans;
+
+import java.util.Date;
+
+import jdk.nashorn.internal.objects.annotations.Getter;
+import jdk.nashorn.internal.objects.annotations.Setter;
+
+@Setter
+@Getter
+
+public class Emp {
+	private int eno;
+	private String ename;
+	private Dept dep;
+	private String eadd;
+	private Date dob;
+
+}

@@ -1,0 +1,21 @@
+package com.nt.test;
+
+import org.springframework.beans.factory.support.DefaultListableBeanFactory;
+import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
+
+
+public class AcTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//		ClassPathXmlApplicationContext con=null;
+//		con=new ClassPathXmlApplicationContext("com/nt/cfgs/ApplicationContext.xml");
+//		
+		
+		DefaultListableBeanFactory fac=new DefaultListableBeanFactory();
+		XmlBeanDefinitionReader reader=new XmlBeanDefinitionReader(fac);
+		
+
+	}
+
+}

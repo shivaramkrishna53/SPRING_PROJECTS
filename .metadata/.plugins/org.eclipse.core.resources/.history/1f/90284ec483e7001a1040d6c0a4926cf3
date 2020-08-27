@@ -1,0 +1,19 @@
+package com.nt.beans;
+
+import java.util.Date;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
+
+@Setter
+@Getter
+@AllArgsConstructor
+public class Emp {
+	private int eno;
+	private String ename;
+	private Dept dep;
+	private String eadd;
+	private Date dob;
+
+}

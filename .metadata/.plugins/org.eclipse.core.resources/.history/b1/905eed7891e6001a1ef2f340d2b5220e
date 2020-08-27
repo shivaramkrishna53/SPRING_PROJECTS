@@ -1,0 +1,7 @@
+package com.nt.listener;
+
+import org.springframework.context.ApplicationListener;
+
+public class IocContainerMonitoringListener implements ApplicationListener<E> {
+
+}

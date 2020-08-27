@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+        <listEntry value="/ioc-proj35-I18n-UsingCoreJava/src/com/nt/Test/I18nTest.java"/>
+    </listAttribute>
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+        <listEntry value="1"/>
+    </listAttribute>
+    <booleanAttribute key="org.eclipse.jdt.launching.ATTR_EXCLUDE_TEST_CODE" value="true"/>
+    <booleanAttribute key="org.eclipse.jdt.launching.ATTR_USE_CLASSPATH_ONLY_JAR" value="false"/>
+    <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.nt.Test.I18nTest"/>
+    <stringAttribute key="org.eclipse.jdt.launching.MODULE_NAME" value="ioc-proj35-I18n"/>
+    <stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="fdf fddsf"/>
+    <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="ioc-proj35-I18n-UsingCoreJava"/>
+</launchConfiguration>

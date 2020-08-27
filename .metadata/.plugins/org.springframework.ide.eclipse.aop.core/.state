@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="iocproj-1-setterinjection"/>
+<aop-project name="iocproj38-p,c namespace"/>
+</aop-reference-model>

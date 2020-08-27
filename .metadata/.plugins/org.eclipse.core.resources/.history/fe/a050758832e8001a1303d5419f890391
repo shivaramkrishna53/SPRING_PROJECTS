@@ -1,0 +1,14 @@
+package com.nt.test;
+
+import org.springframework.context.ApplicationContext;
+
+public class NestedContainersTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ApplicationContext parentctx=null;
+		ApplicationContext childctx=null;
+
+	}
+
+}

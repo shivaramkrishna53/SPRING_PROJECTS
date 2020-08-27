@@ -1,0 +1,16 @@
+package com.nt.test;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class AcTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ClassPathXmlApplicationContext con=null;
+		con=new ClassPathXmlApplicationContext("com/nt/cfgs/ApplicationContext.xml");
+		
+		
+
+	}
+
+}
