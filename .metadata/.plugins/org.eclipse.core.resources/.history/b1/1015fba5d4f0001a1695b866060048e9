@@ -1,0 +1,11 @@
+package com.nt.component;
+
+public class Bridestone implements Tyre {
+
+	@Override
+	public void roadgrip() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

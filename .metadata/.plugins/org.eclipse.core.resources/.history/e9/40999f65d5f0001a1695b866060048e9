@@ -1,0 +1,11 @@
+package com.nt.component;
+
+public class NormalCar implements Car {
+
+	@Override
+	public void drive() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

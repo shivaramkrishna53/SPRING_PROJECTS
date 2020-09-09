@@ -1,0 +1,35 @@
+package com.nt.Test;
+
+import java.util.Scanner;
+
+import com.nt.Factory.FlipkartFactory;
+
+public class FlipkartTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int i;
+		String items[]=new String[10];
+		float prices[]=new float[10];
+		String couriername=null,result=null;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter how many items to u want to purchase:");
+		int n=sc.nextInt();
+		System.out.println("Enter the set of items u want");
+		for(i=1;i<=n;i++)
+		{
+		  items[i]=sc.next();	
+		}
+		System.out.println("Flipkart please enter the product prices::");
+		for(i=1;i<n;i++)
+		{
+			prices[i]=sc.nextFloat();
+		}
+		System.out.println("Which delivery service you want to opt for::(bluedart,dhl,dtdc) any one:::");
+		couriername=sc.next();
+		result=FlipkartFactory.getInstance(couriername);
+		
+
+	}
+
+}

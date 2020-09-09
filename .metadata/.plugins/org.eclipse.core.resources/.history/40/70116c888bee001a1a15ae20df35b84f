@@ -1,0 +1,18 @@
+package com.nt.beans;
+
+import org.springframework.stereotype.Component;
+
+@Component("dtdc")
+public class Dtdc implements Courier {
+
+	public Dtdc()
+	{
+		System.out.println("Dtdc 0-param constructor called");
+	}
+	@Override
+	public String delivery() {
+		
+		return "Dtdc delivery method";
+	}
+
+}

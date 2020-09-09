@@ -1,0 +1,22 @@
+package com.nt.Test;
+
+import java.util.Scanner;
+
+public class FlipkartTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int i;
+		String items[];
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter how many items to u want to purchase:");
+		int n=sc.nextInt();
+		System.out.println("Enter the set of items u want");
+		for(i=1;i<=n;i++)
+		{
+			
+		}
+
+	}
+
+}

@@ -1,0 +1,11 @@
+package com.nt.components;
+
+public class Dtdc implements Courier {
+
+	@Override
+	public String delivery(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

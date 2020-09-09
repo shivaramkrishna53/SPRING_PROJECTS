@@ -1,0 +1,11 @@
+package com.nt.component;
+
+public class Ceat implements Tyre {
+
+	@Override
+	public void roadgrip() {
+		System.out.println("");
+
+	}
+
+}

@@ -1,0 +1,15 @@
+package com.nt.component;
+
+public class Ceat implements Tyre {
+
+	public Ceat()
+	{
+		System.out.println("Ceat 0-param constructor");
+	}
+	@Override
+	public void roadgrip() {
+		System.out.println("Ceat roadgrip for rough surfaces");
+
+	}
+
+}

@@ -1,0 +1,33 @@
+package com.nt.beans;
+
+import java.util.Date;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+@Component("flipkart")
+public class Flipkart {
+	
+	  @Autowired
+	  Date d;
+	  
+//	  @Qualifier("dhl")
+//	 
+//	private Courier c ;
+	
+	  public Flipkart()
+	  {
+		  System.out.println("Flipkart 0-param constructor called");
+	  }
+	
+	  public void callcouriercompanies()
+	  {
+		  System.out.println(d.getTime());
+	  }
+	
+	
+//	public void callcouriercompanies()
+//	{
+//		System.out.println(c.delivery());
+//	}
+
+}

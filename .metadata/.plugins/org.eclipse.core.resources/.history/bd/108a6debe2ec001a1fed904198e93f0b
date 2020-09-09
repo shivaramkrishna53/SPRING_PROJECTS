@@ -1,0 +1,31 @@
+package com.nt.beans;
+
+import org.springframework.beans.factory.annotation.Required;
+
+public class PersonInfo {
+private int pid;
+private String pname;
+private String paddrs;
+
+
+@Required
+public void setPid(int pid) {
+	this.pid = pid;
+}
+
+public String getPname() {
+	return pname;
+}
+@Required
+public void setPname(String pname) {
+	this.pname = pname;
+}
+public String getPaddrs() {
+	return paddrs;
+}
+@Required
+public void setPaddrs(String paddrs) {
+	this.paddrs = paddrs;
+}
+
+}

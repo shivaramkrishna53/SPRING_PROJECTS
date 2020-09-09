@@ -1,0 +1,48 @@
+package com.nt.Factory;
+
+import java.io.FileInputStream;
+import java.io.InputStream;
+
+import com.nt.components.BlueDart;
+import com.nt.components.Dhl;
+import com.nt.components.Dtdc;
+import com.nt.components.Flipkart;
+
+public class FlipkartFactory {
+	//the duty of the factory class is to take the input and based on the inputs it need to return one of its classes.
+	static
+	{
+		try
+		{
+		InputStream is=new FileInputStream("com/nt/Commons/info.properties);"
+		}
+		catch(Exception e)
+		{
+		e.printStackTrace();
+		}
+	}
+	
+	public static Flipkart getInstance(String couriercompany)
+	{
+		Flipkart f=new Flipkart();
+		if(couriercompany.equalsIgnoreCase("bluedart"))
+		{
+			BlueDart bd=new BlueDart();
+			f.SetCourier(bd);
+		}
+		else
+			if(couriercompany.equalsIgnoreCase("dhl"))
+			{
+				Dhl dl=new Dhl();
+				f.SetCourier(dl);
+			}
+			else
+				if(couriercompany.equalsIgnoreCase("dtdc"))
+				{
+					Dtdc d=new Dtdc();
+					f.SetCourier(d);
+				}
+		return f;
+	}
+
+}

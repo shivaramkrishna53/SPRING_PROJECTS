@@ -1,0 +1,9 @@
+package com.practise1;
+
+public class A {
+	public int sum()
+	{
+		return 100;
+	}
+
+}

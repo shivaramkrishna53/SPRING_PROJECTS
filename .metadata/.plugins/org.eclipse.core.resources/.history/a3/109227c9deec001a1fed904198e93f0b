@@ -1,0 +1,8 @@
+package com.nt.beans;
+
+public class PersonInfo {
+private int pid;
+private String pname;
+private String paddrs;
+
+}
