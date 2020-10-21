@@ -1,0 +1,19 @@
+package com.nt.dao;
+
+import org.springframework.jdbc.core.JdbcTemplate;
+
+public class CustomerDaoImpl implements CustomerDao {
+private static String query=";
+	private JdbcTemplate jdt=null;
+	
+	public CustomerDaoImpl(JdbcTemplate jdt) {
+		this.jdt = jdt;
+	}
+
+	public int getEmpcount(int deptid) {
+		int count=jdt.queryForObject("select count(*) from emp where deptid="+deptid,Integer.class);
+		return count;
+	}
+
+	
+}

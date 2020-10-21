@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;iocprojanno-44-realtimedi-calculateinterset-usingPropertiesUsingImportresourcetaginxml&apos; to &apos;iocprojanno-73-realtimedi-calculateinterset-usingPropertiesUsingImportresourcetaginxml&apos;" description="Rename resource &apos;iocprojanno-44-realtimedi-calculateinterset-usingPropertiesUsingImportresourcetaginxml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/iocprojanno-44-realtimedi-calculateinterset-usingPropertiesUsingImportresourcetaginxml" name="iocprojanno-73-realtimedi-calculateinterset-usingPropertiesUsingImportresourcetaginxml" stamp="1602099343410" updateReferences="true"/>
+</session>

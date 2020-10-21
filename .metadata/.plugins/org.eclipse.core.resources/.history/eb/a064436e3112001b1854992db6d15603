@@ -1,0 +1,16 @@
+package com.nt.test;
+
+import org.springframework.context.ApplicationContext;
+
+import com.nt.service.CustomerServiceImpl;
+
+public class CustomerMainTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ApplicationContext ctx=null;
+		CustomerServiceImpl ser=ctx.getBean("ser",CustomerServiceImpl.class);
+
+	}
+
+}

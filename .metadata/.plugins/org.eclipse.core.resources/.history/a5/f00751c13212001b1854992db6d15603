@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+		http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context-4.3.xsd">
+<bean id="hkds" class="com.zaxxer.hikari.HikariDataSource">
+<property name="jdbcUrl" value="oracle:jdbc:@localhost:1521"></property>
+<property name="username" value="c##shiva1234"></property>
+<property name="password" value="shiva1234"></property>
+
+</bean>
+<bean id="jdbctemp" class="org.springframework.jdbc.core.JdbcTemplate">
+<constructor-arg ref="hkds"></constructor-arg>
+</bean>
+<bean id="dao" class="com.nt.dao.CustomerDaoImpl">
+<constructor-arg ref="jdbctemp"></constructor-arg>
+</bean>
+
+</beans>

@@ -1,0 +1,14 @@
+package com.nt.dao;
+
+import org.springframework.jdbc.core.JdbcTemplate;
+
+public class CustomerDaoImpl implements CustomerDao {
+
+	private JdbcTemplate jdt=null;
+	
+	public int getEmpdetails(int empid) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

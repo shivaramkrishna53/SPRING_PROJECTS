@@ -1,0 +1,10 @@
+package com.nt.service;
+
+public class CustomerServiceImpl implements CustomerService {
+
+	public void getEmpcount(int deptid) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,10 @@
+package com.nt.dao;
+
+import org.springframework.jdbc.core.JdbcTemplate;
+
+public interface CustomerDao {
+	private JdbcTemplate jdt;
+	
+	public int getEmpdetails(int empid);
+
+}

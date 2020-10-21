@@ -1,0 +1,10 @@
+package com.nt.dao;
+
+import org.springframework.jdbc.core.JdbcTemplate;
+
+public interface CustomerDao {
+	
+	public int getEmpcount(int deptid);
+	public Map<String,Object> getEmpDetails(int empno);
+
+}

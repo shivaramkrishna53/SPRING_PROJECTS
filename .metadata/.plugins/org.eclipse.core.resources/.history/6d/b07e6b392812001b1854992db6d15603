@@ -1,0 +1,17 @@
+package com.nt.service;
+
+import com.nt.dao.CustomerDaoImpl;
+
+public class CustomerServiceImpl implements CustomerService {
+	private CustomerDaoImpl dao=null;
+	public CustomerServiceImpl(CustomerDaoImpl dao)
+	{
+		this.dao=dao;
+	}
+
+	public void getEmpcount(int deptid) {
+		System.out.println("");
+
+	}
+
+}

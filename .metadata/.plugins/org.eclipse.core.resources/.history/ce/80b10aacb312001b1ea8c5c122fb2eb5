@@ -1,0 +1,21 @@
+package com.nt.config;
+
+import javax.sql.DataSource;
+
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
+
+import com.zaxxer.hikari.HikariDataSource;
+
+@Configuration("config")
+@ComponentScan("com.nt")
+@PropertySource("com/nt/commons/jdbc.properties")
+public class Config {
+	public DataSource getDatasource()
+	{
+		HikariDataSource hkds=new HikariDataSource();
+		return hkds;
+	}
+
+}
