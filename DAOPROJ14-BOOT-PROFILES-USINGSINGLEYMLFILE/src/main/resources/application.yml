@@ -1,0 +1,41 @@
+spring:
+  profiles: dev
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: shiva1234
+    type: com.mchange.v2.c3p0.ComboPooledDataSource
+    url: jdbc:mysql:///springdb
+    username: root
+
+---
+spring:
+  profiles: test
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: shiva1234
+    type: org.apache.commons.dbcp2.BasicDataSource
+    url: jdbc:mysql:///springdb
+    username: root
+    
+---
+spring:
+  profiles: uat
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    password: shiva1234
+    type: org.apache.commons.dbcp2.BasicDataSource
+    url: jdbc:oracle:thin:@localhost:1521:orcl
+    username: c##shiva1234
+---
+spring:
+  profiles: prod
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    password: shiva1234
+    url: jdbc:oracle:thin:@localhost:1521:orcl
+    username: c##shiva1234
+---
+spring:
+  profiles:
+    active: dev
+    

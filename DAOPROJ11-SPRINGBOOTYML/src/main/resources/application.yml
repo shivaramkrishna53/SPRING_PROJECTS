@@ -1,0 +1,25 @@
+per:
+  info:
+    addrs: hyd
+    age: 30
+    bikes:
+      -hero
+      -activa
+      -ktm
+    cars: 
+       -maruthi
+       -suzuki
+       -eartiga
+    job:
+      company:deloitte
+      salary:50000
+      location:hyderabad
+      designation:developer
+    marks:
+    - 50
+    - 20
+    name: ramesh
+    phones:
+      office: 44444
+      personal: 222222
+      residence: 33333

@@ -1,0 +1,8 @@
+package snippet;
+
+public class Snippet {
+	// https://mvnrepository.com/artifact/commons-io/commons-io
+	compile group: 'commons-io', name: 'commons-io', version: '2.4'
+	
+}
+

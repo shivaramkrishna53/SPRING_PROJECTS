@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;DAOPROJ15-100P-PROFILES&apos;&#x0D;&#x0A;- Original project: &apos;DAOPROJ15-100P-PROFILES&apos;&#x0D;&#x0A;- Original element: &apos;DAOPROJ15-100P-PROFILES/src/main/java/DAOPROJ15_100P_PROFILES.DAOPROJ15_100P_PROFILES&apos;" description="Delete element" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;DAOPROJ15_100P_PROFILES.DAOPROJ15_100P_PROFILES" element2="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;DAOPROJ15_100P_PROFILES" elements="2" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1605363203733" subPackages="false" version="1.0"/>
+</session>
