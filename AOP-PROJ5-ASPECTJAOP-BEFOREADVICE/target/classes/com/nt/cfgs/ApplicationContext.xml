@@ -1,0 +1,17 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+		http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop-4.3.xsd">
+		
+		<!-- configure the aspect or advice class as spring bean -->
+<bean id="aspect" class="com.nt.aspect.TestDriveAduitingAspect"/>
+
+<!-- Enable AspectjAop  -->
+<aop:config>
+<aop:pointcut expression="execution(java.lang.String com.nt.target.CarShowRoom.buyCar(..))and args(car,price,executive)" id="pc"/>
+<aop:aspect ref="aspect">
+<aop:before method="testdrive" pointcut-ref="pc"/>
+ </aop:aspect>
+</aop:config>
+</beans>

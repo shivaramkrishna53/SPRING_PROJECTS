@@ -1,7 +1,0 @@
-package com.calculateintrest.dao;
-
-import com.calculateintrest.service.CustomerService;
-
-public class CustomerDaoImpl implements CustomerServiceImpl {
-
-}

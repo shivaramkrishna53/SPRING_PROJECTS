@@ -1,6 +1,0 @@
-package com.calculateintrest.vo;
-
-public class CustomerVo {
-private String cno=null,ctime=null,crate=null,cname=null,cadd=null, cprinamnt=null,totalintrestamnt=null;
-
-}

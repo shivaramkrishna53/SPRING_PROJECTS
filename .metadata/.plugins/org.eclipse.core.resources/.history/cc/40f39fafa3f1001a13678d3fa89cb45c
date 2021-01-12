@@ -1,3 +1,0 @@
-#properties file for giving the strategy design pattern dependent class
-
-sdp.dependent:com.nt.components.Dhl

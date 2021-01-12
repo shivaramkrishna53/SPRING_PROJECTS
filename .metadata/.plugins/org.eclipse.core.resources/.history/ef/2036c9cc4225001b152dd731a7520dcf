@@ -1,6 +1,0 @@
-spring:
-  datasource:
-    driver-class-name: oracle.jdbc.driver.OracleDriver
-    password: shiva1234
-    url: jdbc:oracle:thin:@localhost:1521:orcl
-    username: c##shiva1234

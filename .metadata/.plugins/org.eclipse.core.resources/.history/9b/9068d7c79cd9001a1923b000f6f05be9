@@ -1,8 +1,0 @@
-package com.calculateintrest.dto;
-
-public class CustomerDto {
-	String cname=null,cadd=null;
-	int cno=0,ctime=0,crate=0;
-	float cprinamnt=0.0f;
-
-}

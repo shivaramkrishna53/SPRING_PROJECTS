@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring accessors="true" comment="Delete element from project &apos;iocproj13-cricketavg-realtimedi&apos;&#x0D;&#x0A;- Original project: &apos;iocproj13-cricketavg-realtimedi&apos;&#x0D;&#x0A;- Original element: &apos;iocproj13-cricketavg-realtimedi/src/main/java/iocproj13.cricketavg.realtimedi&apos;" description="Delete element" element1="/src\/main\/java=/gradle_scope=/main=/=/gradle_used_by_scope=/main,test=/&lt;iocproj13.cricketavg.realtimedi" element2="/src\/main\/java=/gradle_scope=/main=/=/gradle_used_by_scope=/main,test=/&lt;iocproj13.cricketavg" element3="/src\/main\/java=/gradle_scope=/main=/=/gradle_used_by_scope=/main,test=/&lt;iocproj13" elements="3" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1596926417288" subPackages="false" version="1.0"/>
-</session>

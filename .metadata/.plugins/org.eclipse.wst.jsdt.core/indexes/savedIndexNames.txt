@@ -1,1 +1,0 @@
-INDEX VERSION 1.4+E:\shiva java developer full stack\springprojects\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes

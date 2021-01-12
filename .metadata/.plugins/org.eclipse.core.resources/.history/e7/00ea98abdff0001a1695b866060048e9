@@ -1,9 +1,0 @@
-package com.practise1;
-
-public class C {
-	public int sum()
-	{
-		return 300;
-	}
-
-}

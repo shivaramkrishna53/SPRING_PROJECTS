@@ -1,7 +1,0 @@
-package java.com.nt.bo;
-
-public class CricketerAvgBo {
-	private String name;
-	int runsscored,gotout,runsgiven,wicketstaken;
-	float battingavg,bowlingavg;
-}

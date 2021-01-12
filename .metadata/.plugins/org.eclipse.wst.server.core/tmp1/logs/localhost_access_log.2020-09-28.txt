@@ -1,5 +1,0 @@
-127.0.0.1 - - [28/Sep/2020:22:43:52 +0530] "GET / HTTP/1.1" 404 751
-0:0:0:0:0:0:0:1 - - [28/Sep/2020:22:43:53 +0530] "GET /ioc-proj63-Web-FactoryBean-ServiceLocator/ HTTP/1.1" 404 797
-0:0:0:0:0:0:0:1 - - [28/Sep/2020:22:44:36 +0530] "GET / HTTP/1.1" 404 751
-0:0:0:0:0:0:0:1 - - [28/Sep/2020:22:48:54 +0530] "GET /ioc-proj63-Web-FactoryBean-ServiceLocator/ HTTP/1.1" 404 797
-0:0:0:0:0:0:0:1 - - [28/Sep/2020:22:50:04 +0530] "GET /ioc-proj63-Web-FactoryBean-ServiceLocator/ HTTP/1.1" 404 797

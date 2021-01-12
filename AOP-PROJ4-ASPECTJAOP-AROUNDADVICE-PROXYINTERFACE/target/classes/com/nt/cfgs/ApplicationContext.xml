@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+		http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop-4.3.xsd">
+<!--  confiig the target class as spring bean -->
+<bean id="target" class="com.nt.target.BankService"/>
+<!-- config the aspect class as spring beans -->
+
+<bean id="perlog" class="com.nt.aspect.PerformanceLoggingAspect"/>
+<bean id="cach" class="com.nt.aspect.CachingAspect"/>
+
+<!-- enable Aspectjaop -->
+
+<aop:config>
+<!-- config the point cuts -->
+<aop:pointcut expression="execution(float com.nt.target.IBankService.*(..))" id="p1"/>
+
+<aop:pointcut expression="execution(float com.nt.target.IBankService.calculateCompoundIntrest(..))" id="p2"/>
+
+<!-- to config the spring bean as the aspect/advice class -->
+<aop:aspect ref="cach" order="1">
+<aop:around method="Caching" pointcut-ref="p1"/>
+</aop:aspect>
+
+<aop:aspect ref="perlog" order="2">
+<aop:around method="logging" pointcut-ref="p1"/>
+</aop:aspect>
+
+<aop:aspect ref="perlog" order="3">
+<aop:around method="monitor" pointcut-ref="p2"/>
+</aop:aspect>
+
+</aop:config>
+</beans>

@@ -1,6 +1,0 @@
-package com.nt.component;
-
-public interface Tyre {
-
-	public void roadgrip();
-}

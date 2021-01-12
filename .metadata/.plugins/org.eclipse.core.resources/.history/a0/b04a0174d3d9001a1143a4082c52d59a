@@ -1,7 +1,0 @@
-package java.com.nt.service;
-
-import java.com.nt.dto.CricketerAvgDto;
-
-public interface CricketerAvgService {
-public String calculateAvg(CricketerAvgDto dto) throws Exception;
-}

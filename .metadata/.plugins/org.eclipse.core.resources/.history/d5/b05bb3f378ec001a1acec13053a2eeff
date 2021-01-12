@@ -1,7 +1,0 @@
-package com.practise;
-
-public interface LaptopPrice {
-
-	public int totalcost(int manufacture,int delivery);
-	public int totalcost2(int manufacture,int delivery);
-}

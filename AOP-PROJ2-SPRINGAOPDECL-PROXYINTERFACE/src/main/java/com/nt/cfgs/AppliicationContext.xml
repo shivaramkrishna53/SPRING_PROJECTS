@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+<!-- cofig target class -->
+<bean id="bankser" class="com.nt.service.BankServiceImpl"></bean>
+<!-- confg advice class -->
+<bean id="perfor" class="com.nt.advice.PerformanceMonitoring"></bean>
+
+<!--  cofg proxy factory bean -->
+<bean id="proxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+<property name="target" ref="bankser"></property>
+<property name="interceptorNames">
+<array>
+<value>perfor</value>
+</array>
+</property>
+</bean>
+
+</beans>

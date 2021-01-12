@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename package &apos;com.nt.cfgs&apos; to &apos;com.nt.beans&apos;&#x0D;&#x0A;- Original project: &apos;iocproj-1-setterinjection&apos;&#x0D;&#x0A;- Original element: &apos;iocproj-1-setterinjection/src/com.nt.cfgs&apos;&#x0D;&#x0A;- Renamed element: &apos;iocproj-1-setterinjection/src/com.nt.beans&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.nt.cfgs&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;com.nt.cfgs" name="com.nt.beans" qualified="false" references="true" stamp="1598490983364" textual="false" version="1.0"/>
-</session>

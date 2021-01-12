@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Copy package &apos;com.nt.commons&apos; to &apos;ioc-proj36-I18n/src/main/java&apos;&#x0D;&#x0A;- Original project: &apos;ioc-proj35-I18n&apos;&#x0D;&#x0A;- Destination element: &apos;ioc-proj36-I18n/src/main/java&apos;&#x0D;&#x0A;- Original element: &apos;ioc-proj35-I18n/src/com.nt.commons&apos;" description="Copy package" destination="=ioc-proj36-I18n/src\/main\/java=/gradle_scope=/main=/=/gradle_used_by_scope=/main,test=/" element1="/src&lt;com.nt.commons" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1598223022753" version="1.0"/>
-</session>

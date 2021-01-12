@@ -1,8 +1,0 @@
-package com.calculateintrest.dao;
-
-import com.calculateintrest.dto.CustomerDto;
-
-public interface CustomerDao {
-	public String calculateIntrest(CustomerDto d) throws Exception;
-
-}

@@ -1,7 +1,0 @@
-package java.com.nt.dao;
-
-import java.com.nt.bo.CricketerAvgBo;
-
-public interface CricketerAvgDao {
-public int insert(CricketerAvgBo bo)throws Exception;
-}
