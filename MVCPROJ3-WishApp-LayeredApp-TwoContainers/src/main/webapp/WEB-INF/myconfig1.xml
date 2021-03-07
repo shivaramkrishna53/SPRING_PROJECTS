@@ -1,0 +1,23 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+<bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+<property name="mappings">
+<props>
+<prop key="welcome.htm">welbid</prop>
+<prop key="countries.htm">countries</prop>
+</props>
+</property>
+</bean>
+
+<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+<property name="prefix" value="/WEB-INF/pages/"></property>
+<property name="suffix" value=".jsp"/>
+</bean>
+<bean id="welbid" class="com.nt.controller.Welcome"/>
+<bean id="countries" class="com.nt.controller.Countries">
+<constructor-arg ref="country"></constructor-arg>
+</bean>
+</beans>
+

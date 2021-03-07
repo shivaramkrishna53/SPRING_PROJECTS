@@ -1,0 +1,1 @@
+<jsp:forwardpage="welcome.htm"/>"

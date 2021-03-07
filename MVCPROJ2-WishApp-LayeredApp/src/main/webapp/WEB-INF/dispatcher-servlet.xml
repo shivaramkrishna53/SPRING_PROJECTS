@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+
+<!-- config simpleurlhandlermapping class as spring bean -->
+
+<bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+<property name="mappings">
+<props>
+<prop key="welcome.do">wpc</prop>
+<prop key="wish.do">wshpc</prop>
+</props>
+</property>
+</bean>
+
+
+<!-- config internalresourceviewresolver -->
+<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+<property name="prefix" value="/WEB-INF/pages/"></property>
+<property name="suffix" value=".jsp"></property>
+</bean>
+
+
+<!-- config controller classes as spring beans -->
+<bean id="wpc" class="com.nt.controller.WelcomePageController"/>
+
+<bean id="wmsg" class="com.nt.service.WishMessage"/>
+
+<bean id="wshpc" class="com.nt.controller.WishMessageController">
+<constructor-arg ref="wmsg"></constructor-arg>
+</bean>
+
+</beans>
