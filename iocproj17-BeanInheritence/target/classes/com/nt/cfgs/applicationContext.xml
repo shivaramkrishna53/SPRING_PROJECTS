@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+<bean id="doj" class="java.util.Date">
+<property name="year" value="119"></property>
+</bean>
+
+<bean id="tcsEmp" class="com.nt.beans.tcs" abstract="true">
+<property name="ceo" value="rajesh gopinathan"/>
+<property name="headoffice" value="mumbai"></property>
+<property name="doj" ref="doj"></property>
+<property name="initialctc" value="3.36"></property>
+</bean>
+
+<bean id="ShivaAsEmp" class="com.nt.beans.tcs" parent="tcsEmp">
+<property name="id" value="1706264"/>
+<!-- <property name="ceo" value="rajesh gopinathan"/> -->
+<!-- <property name="headoffice" value="mumbai"></property> -->
+<!-- <property name="doj" ref="doj"></property> -->
+<!-- <property name="initialctc" value="3.36"></property> -->
+<property name="empname" value="shiva"></property>
+</bean>
+
+<bean id="GovindAsEmp" class="com.nt.beans.tcs" parent="tcsEmp">
+<property name="id" value="1706261"/>
+<property name="empname" value="govind"></property>
+</bean>
+
+</beans>

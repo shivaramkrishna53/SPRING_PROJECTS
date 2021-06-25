@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans default-merge="true" xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+<bean id="fresher" class="com.nt.beans.SoftwareIndustrySkillsRequiredAccordingToExperience">
+<property name="technologies">
+<set value-type="java.lang.String">
+<value>core java</value>
+<value>html</value>
+<value>css</value>
+<value>js</value>
+</set>
+</property>
+<property name="tools" >
+<set>
+<value>eclipse</value>
+<value>sts</value>
+</set>
+</property>
+</bean>
+
+<bean  id="TwoYear" class="com.nt.beans.SoftwareIndustrySkillsRequiredAccordingToExperience" parent="fresher" >
+<property name="technologies">
+<set merge="default">
+<value>spring</value>
+<value>hibernate</value>
+<value>webservices</value>
+</set>
+</property>
+<property name="tools">
+<set merge="true">
+<value>junit</value>
+<value>git</value>
+</set>
+</property>
+</bean>
+
+
+</beans>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+  https://www.springframework.org/schema/beans/spring-beans.xsd">
+  <!-- configuring drivermanagerdatasource -->
+  <bean id="orcdb" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+  <property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"/>
+<!--   <property name="url" value="jdbc:oracle:thin:@localhost:1521:orcl"/> -->
+  <property name="username" value="c##shiva1234"/>
+  <property name="password" value="Shiva@2003"/>
+  </bean>
+  
+  <bean id="hkds" class="com.zaxxer.hikari.HikariDataSource" parent="orcdb">
+  <property name="jdbcUrl" value="jdbc:oracle:thin:@localhost:1521:orcl"></property>
+  <property name="minimumIdle" value="20"></property>
+  <property name="maximumPoolSize" value="200"></property>
+  </bean>
+  
+  <!-- configuring dao -->
+  <bean id="dao" class="com.nt.dao.CricketerAvgDaoImpl">
+  <constructor-arg ref="hkds"/>
+  </bean>
+  <!-- configuring service -->
+  <bean id="service" class="com.nt.service.CricketerAvgServiceImpl">
+  <constructor-arg ref="dao"/>
+   </bean>
+  <!-- configure controller  -->
+  <bean id="controller" class="com.nt.controller.CricketerAvgController">
+  <constructor-arg ref="service"></constructor-arg>
+  </bean>
+ 
+  </beans>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+		http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+<bean id="dt1" class="java.util.Date">
+<property name="year">
+<value>120</value>
+</property>
+<property name="month">
+<value>2</value>
+</property>
+</bean>
+<bean id="dt2" class="java.util.Date">
+</bean>
+
+<bean id="emp"  class="com.nt.beans.EmployeeInfo">
+<constructor-arg name="empids">
+<array>
+<value>101</value>
+<value>102</value>
+<value>103</value>
+</array>
+</constructor-arg>
+
+<property name="empdoj">
+<array>
+<ref bean="dt1"/>
+<ref bean="dt2"/>
+</array>
+</property>
+</bean>
+
+<bean id="col" class="com.nt.beans.CollegeInfoListInjection">
+<constructor-arg >
+<list value-type="java.lang.String">
+<value>shiva</value>
+<value>sai</value>
+</list>
+</constructor-arg>
+<constructor-arg>
+<list value-type="java.lang.Integer">
+<value>101</value>
+<value>102</value>
+</list>
+</constructor-arg>
+</bean>
+
+<bean id="ph" class="com.nt.beans.PhoneNumbers">
+<property name="phnos">
+<set value-type="java.lang.Integer">
+<value>7036</value>
+<value>8686</value>
+</set>
+</property>
+</bean>
+<bean id="uni" class="com.nt.beans.UniversityInfo">
+<constructor-arg>
+<map key-type="java.lang.Integer" value-type="java.lang.String">
+<entry key="101" value="shekar"></entry>
+<entry key="102" value="saroja"></entry>
+</map>
+</constructor-arg>
+
+<property name="pr">
+<props>
+<prop key="banana">yellow</prop>
+<prop key="apple">red</prop>
+</props>
+</property>
+</bean>
+
+
+</beans>

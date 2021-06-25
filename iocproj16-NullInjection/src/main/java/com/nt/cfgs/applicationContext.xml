@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+<bean id="dob" class="java.util.Date">
+<property name="year" value="100"/>
+</bean>
+
+<bean id="doj" class="java.util.Date">
+<property name="year" value="122"/>
+</bean>
+
+<bean id="emp" class="com.nt.beans.Employee">
+<constructor-arg name="name" value="jhon"></constructor-arg>
+<constructor-arg name="empid" value="101"/>
+<constructor-arg name="dob" ref="dob"/>
+<constructor-arg name="dom"><null/></constructor-arg>
+<constructor-arg name="doj" ref="doj"/>
+</bean>
+
+</beans>

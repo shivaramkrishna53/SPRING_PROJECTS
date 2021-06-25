@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="st" class="com.nt.beans.Student">
+<!-- <property name="sid" value="101"></property> -->
+<!-- <property name="sname" value="shiva"/> -->
+<constructor-arg name="sid" value="1011"></constructor-arg>
+<constructor-arg name="sname" value="shiva"></constructor-arg>
+<constructor-arg name="savg" value="8.2"></constructor-arg>
+</bean>
+
+</beans>

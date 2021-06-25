@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans default-autowire="constructor" xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+<bean id="corier1" class="com.nt.courier.Dtdc"/>
+<bean id="corier2" class="com.nt.courier.BlueDart" primary="true"/>
+<!-- by name type of autowiring -->
+<bean id="flipkt" class="com.nt.Flipkart.Flipkart" autowire="byName"/>
+
+<!-- by type of autowiring -->
+<bean id="amzn" class="com.nt.Amazon.Amazon" autowire="byType"/> 
+
+<!-- by name of autowiring through constructor -->
+<bean id="snpdl" class="com.nt.Snapdeal.Snapdeal" autowire="constructor" />
+
+</beans>
